@@ -1,0 +1,21 @@
+//insertion in string
+#include<stdio.h>
+int main()
+{
+	char str[],ch;
+	int n;
+	printf("Enter the string : ");
+	fgets(str,sizeof(str),stdin);
+	printf("Enter position and charcter which inset : ");
+                        scanf("%d",&n);
+                        scanf("%c",&ch);
+                        
+                        for(int i=strlen(str);i>=n;i--)
+                        {
+                           str[i+1]=str[i];
+                        }
+                        str[n]=ch;
+                        printf("%s",str);
+                        return 0;
+}
+
